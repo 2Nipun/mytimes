@@ -1,0 +1,272 @@
+
+
+body {
+  margin: 0;
+}
+
+/* Header */
+
+    /* My Notes
+     - Used space between 2 separate left right divs
+     - Used a color tag for a to make links black
+     - Used align center, needed in inside div too since separate block
+     - Used position Fixed from top with Z index. Also left right 0 to make it extend all the way.
+    - CAN DO BETTER
+        - Padding for main
+    */
+
+.header {
+  display: flex;
+  height: 80px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 15px;
+  background-color: white;
+  z-index: 50;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: space-between;
+}
+
+  /* Nav left */
+  .logo {
+    display: flex;
+    color: MediumAquamarine;
+    align-items: center;
+  }
+
+  .logotext {
+    padding-left: 10px;
+  }
+
+  /* Nav Right */
+  .navigation {
+    display: inline-block;
+  }
+
+  .navigation span {
+    padding: 8px;
+  }
+
+  .navigation a {
+    color: black;
+  }
+
+/* Main Content */
+.main {
+ display: flex;
+ justify-content: center;
+ z-index: 20;
+ padding-top: 90px;
+}
+
+.content {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+  /* Column 1 */
+  .column-large {
+    width: 630px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+  }
+
+
+      /* Column First Article */
+      .article1-1-header {
+        display: flex;
+        background-image: url('./resources/img-story-main.png');
+        align-items: center;
+        text-align: center;
+        height: 300px;
+      }
+
+      .article1-1-header span{
+        display: flex;
+        font-family: Georgia;
+        font-weight: bold;
+        font-size: 40px;
+        color: white;
+      }
+
+      /* Column Second Block of Articles */
+      .block1-2 {
+        display: flex;
+      }
+
+          /* Column Left 2 articles */
+
+          .block1-2-1 {
+            margin-right: 15px;
+          }
+
+              .block1-2-1-2 {
+                display: flex;
+                background-image: url('./resources/img-story-2.png');
+                height: 300px;
+                align-items: center;
+                text-align: center;
+              }
+
+              .block1-2-1-2 span{
+                display: flex;
+                font-family: Georgia;
+                font-weight: bold;
+                font-size: 30px;
+                color: white;
+              }
+
+          /* Column Right 2 articles */
+
+          .block1-2-2 {
+            margin-left: 15px;
+          }
+
+              .block1-2-2-2 {
+                display: flex;
+                background-image: url('./resources/img-story-3.png');
+                height: 300px;
+                align-items: center;
+                text-align: center;
+              }
+
+              .block1-2-2-2 span {
+                display: flex;
+                font-family: Georgia;
+                font-weight: bold;
+                font-size: 30px;
+                color: white;
+              }
+
+
+  /* Column 2 */
+  .column-medium {
+    width: 300px;
+    margin: 15px;
+  }
+      /* Column 2 image */
+      .block2-2 {
+        display: flex;
+        background-image: url('./resources/img-story-1.png');
+        height: 300px;
+        align-items: center;
+        text-align: center;
+      }
+
+      .block2-2 span{
+        display: flex;
+        font-family: Georgia;
+        font-weight: bold;
+        font-size: 30px;
+        color: white;
+
+      }
+
+  /* Column 3 */
+
+      /* My Notes
+        - Flex direction on just the spans, since its flex so will go in a straight line otherwise
+        - used span not p
+        - used padding to make it button like
+      */
+
+  .column-small {
+    width: 240px;
+    margin: 15px;
+  }
+      /* Image */
+
+      /* News Bites */
+      .block3-2 {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+
+      }
+
+      .block3-2 h3 {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .block3-2 span {
+        background-color: WhiteSmoke;
+        font-family: Verdana;
+        font-size: 12px;
+        color: DimGray;
+        border-bottom: 1px solid black;
+        padding: 15px;
+      }
+
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: MediumAquamarine;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 350px;
+  margin-top: 50px;
+  border: 0;
+  padding: 0;
+}
+
+.footer a {
+  color: black;
+}
+
+  /* Nav */
+  .block4-1 {
+    display: flex;
+    align-items: center;
+  }
+
+      /* Nav Left Image */
+      .block4-1-1 {
+        font-family: Georgia;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        margin: 10px;
+
+      }
+
+      .block4-1-1 span {
+        padding: 8px;
+        border-right: 2px solid white;
+        padding-right: 30px;
+        }
+
+
+      /* Nav Right Blocks */
+      .block4-1-2 {
+        display: inline-block;
+        margin: 10px;
+      }
+
+      .block4-1-2 span {
+        padding: 8px;
+        }
+
+      }
+
+ /* Copyright text */
+ .block4-2{
+   display: flex;
+ }
